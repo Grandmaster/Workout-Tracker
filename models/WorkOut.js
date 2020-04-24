@@ -1,6 +1,5 @@
 // Mongoose
 const mongoose = require("mongoose");
-
 const Schema = mongoose.Schema;
 
 const WorkOutSchema = new Schema({
@@ -8,6 +7,7 @@ const WorkOutSchema = new Schema({
     type: String,
     trim: true,
   },
+  type: String,
   weight: Number,
   sets: Number,
   reps: Number,
