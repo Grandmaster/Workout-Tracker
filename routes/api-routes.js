@@ -22,4 +22,9 @@ module.exports = function (app) {
       res.json(data).end();
     });
   });
+  app.get("/api/workouts/range", function (req, res) {
+    db.Workout.find({}).then((data) => {
+      res.json(data).end();
+    });
+  });
 };
